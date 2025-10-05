@@ -1,9 +1,17 @@
-const navbarToggle = document.querySelector('.navbar-toggle');
+const navbar = document.getElementById('navbar');
+const openBtn = document.getElementById('open-sidebar-button');
 
-const navbarMenu = document.querySelector('.navbar-menu');
+function openSidebar() {
+    navbar.classList.add('show');
+    openBtn.classList.add('hide');
+}
 
-navbarToggle.addEventListener('click', () => {
-    navbarToggle.classList.toggle('active');
-    navbarMenu.classList.toggle('active');
-});
+function closeSidebar() {
+    navbar.classList.remove('show');
+
+    setTimeout(() => {
+        openBtn.classList.remove('hide');
+    }, 100);
+}
+
 
