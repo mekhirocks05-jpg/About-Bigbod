@@ -129,7 +129,10 @@ nav a.accent-link{
     cursor: pointer;
 }
 
-
+#overlay{
+    background: #ffffff;
+    position: fixed;
+    inset-block: ;
 }
 
 /* responsive Styles */
@@ -247,8 +250,6 @@ span{
     align-items: flex-end;
     gap: 20px;
     float: left;
-    width: 20%;
-    height: 20%;
 }
 .class-Give {
     color: #ddefea;
@@ -259,5 +260,4 @@ span{
     background: transparent;
     backdrop-filter: blur(5px);
     border-style: outset;
-
 }
